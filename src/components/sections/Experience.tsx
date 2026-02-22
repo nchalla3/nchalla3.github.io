@@ -17,7 +17,7 @@ export default function Experience() {
         <div className="flex md:flex-col overflow-x-auto md:overflow-visible gap-0 border-b md:border-b-0 md:border-l border-slate-700 shrink-0">
           {experience.map((job, i) => (
             <button
-              key={job.company}
+              key={i}
               onClick={() => setActiveTab(i)}
               className={`relative px-5 py-3 font-mono text-sm text-left whitespace-nowrap transition-all duration-200 ${
                 activeTab === i
