@@ -25,8 +25,8 @@ export const experience = [
   },
   {
     role: "Telemetry Co-Lead",
-    company: "Formula Slug – UCSC Formula SAE EV",
-    url: "https://www.slugracing.com",
+    company: "Formula Slug",
+    url: "https://formulaslug.com/",
     period: "Sep 2024 – June 2025",
     bullets: [
       "Directed a team of 8 in programming a C++ embedded system telemetry board to communicate with a Formula-style electric vehicle through CAN, optimizing vehicle performance by 12%.",
@@ -35,8 +35,8 @@ export const experience = [
   },
   {
     role: "Outreach Lead",
-    company: "Formula Slug – UCSC Formula SAE EV",
-    url: "https://www.slugracing.com",
+    company: "Formula Slug",
+    url: "https://formulaslug.com/",
     period: "Sep 2024 – Present",
     bullets: [
       "Led recruiting and onboarding for 100+ new members to make Formula Slug the largest club on campus, a 3.5× increase over the previous year.",
@@ -45,7 +45,7 @@ export const experience = [
     ],
   },
   {
-    role: "CSE 20/30 Undergraduate Group Tutor",
+    role: "CSE Group Tutor",
     company: "Jack Baskin School of Engineering",
     url: "https://engineering.ucsc.edu",
     period: "Dec 2024 – Present",

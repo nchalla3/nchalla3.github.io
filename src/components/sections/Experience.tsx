@@ -5,6 +5,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import { experience } from "@/lib/data";
 import SectionHeading from "@/components/ui/SectionHeading";
 
+const METRIC_RE = /(\$[\d,]+(?:\.\d+)?(?:k|K)?|top[-\s]\d+(?:%)?|\d+[\d,.]*(?:%|×|x|\+)?)/;
+
+function BulletText({ text }: { text: string }) {
+  // split with a capturing group: even indices = plain text, odd indices = metric matches
+  const parts = text.split(METRIC_RE);
+  return (
+    <span>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <strong key={i} className="text-slate-200 font-semibold">
+            {part}
+          </strong>
+        ) : (
+          part
+        )
+      )}
+    </span>
+  );
+}
+
 export default function Experience() {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -31,7 +51,7 @@ export default function Experience() {
                   className="absolute left-0 top-0 bottom-0 md:w-0.5 md:h-auto h-0.5 w-auto bottom-0 md:bottom-auto right-0 md:right-auto bg-[var(--accent)]"
                 />
               )}
-              {job.company}
+              {job.role}
             </button>
           ))}
         </div>
@@ -73,7 +93,7 @@ export default function Experience() {
                     className="flex gap-3 text-slate-400 text-sm leading-relaxed"
                   >
                     <span className="text-[var(--accent)] mt-1 shrink-0">▹</span>
-                    {bullet}
+                    <BulletText text={bullet} />
                   </motion.li>
                 ))}
               </ul>
