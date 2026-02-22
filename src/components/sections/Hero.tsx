@@ -64,16 +64,17 @@ export default function Hero() {
           variants={item}
           className="text-3xl md:text-5xl lg:text-6xl font-bold text-slate-500 leading-tight mb-6"
         >
-          I build things for the web.
+          I build things.
         </motion.h2>
 
         <motion.p
           variants={item}
           className="max-w-xl text-slate-400 text-base md:text-lg leading-relaxed mb-10"
         >
-          I&apos;m a software engineer focused on building exceptional digital
-          experiences. Currently designing and shipping scalable systems that
-          live at the intersection of great engineering and great UX.
+          I&apos;m Naveen, an undergraduate Computer Science student at the
+          University of California, Santa Cruz. My interests are currently in
+          scalable systems design to solve everyday problems and augmenting the
+          human condition with the power of computing.
         </motion.p>
 
         <motion.div variants={item} className="flex flex-wrap gap-4">

@@ -18,10 +18,10 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Hi! I&apos;m Naveen, a software engineer based in the US with a
-            passion for building products that make a difference. I got my start
-            in computer science studying algorithms and systems, and quickly
-            fell in love with the craft of writing clean, efficient code.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -29,19 +29,10 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            My main focus these days is building accessible, scalable web
-            applications and services. I enjoy working across the full stack —
-            from designing APIs to polishing UIs — and I care deeply about
-            performance, developer experience, and shipping things that work.
-          </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            When I&apos;m not at my desk, I&apos;m usually hiking, tinkering
-            with side projects, or reading about distributed systems.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
           </motion.p>
         </div>
 

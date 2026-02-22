@@ -7,67 +7,69 @@ export const navLinks = [
 ];
 
 export const skills = {
-  Languages: ["Python", "TypeScript", "JavaScript", "Java", "C++", "SQL"],
-  Frameworks: ["React", "Next.js", "Node.js", "FastAPI", "Spring Boot"],
-  Tools: ["Git", "Docker", "AWS", "PostgreSQL", "Redis", "Linux"],
+  Languages: ["Python", "Rust", "C/C++", "Java", "TypeScript", "SQL", "Dart"],
+  Frameworks: ["React", "Flutter", "Node.js", "PyTorch", "Django", "Streamlit", "Apache Kafka"],
+  Tools: ["Git", "Docker", "AWS Lambda", "Firebase", "CI/CD", "Linux", "Android Studio"],
 };
 
 export const experience = [
   {
-    role: "Software Engineer",
-    company: "Acme Corp",
-    url: "#",
-    period: "Jan 2024 – Present",
+    role: "Software Engineer Intern",
+    company: "Farm-ng",
+    url: "https://farm-ng.com",
+    period: "June 2025 – Aug 2025",
     bullets: [
-      "Built and scaled microservices handling 1M+ daily requests using Node.js and Kubernetes.",
-      "Reduced API latency by 40% through query optimization and Redis caching strategies.",
-      "Led migration of legacy monolith to event-driven architecture with Kafka.",
+      "Created RTK GPS data-logging system in GeoJSON using Rust with Serde for easier open-source integration, improving performance by 11%.",
+      "Revamped metadata architecture by tripling metadata collection, allowing for greater data analysis of deployed robots in the field.",
     ],
   },
   {
-    role: "Software Engineering Intern",
-    company: "Startup Inc",
-    url: "#",
-    period: "May 2023 – Aug 2023",
+    role: "Telemetry Co-Lead",
+    company: "Formula Slug – UCSC Formula SAE EV",
+    url: "https://www.slugracing.com",
+    period: "Sep 2024 – June 2025",
     bullets: [
-      "Developed full-stack features for a B2B SaaS platform using React and FastAPI.",
-      "Automated data pipelines that reduced manual ETL work by 6 hours/week.",
+      "Directed a team of 8 in programming a C++ embedded system telemetry board to communicate with a Formula-style electric vehicle through CAN, optimizing vehicle performance by 12%.",
+      "Drove a top-20 finish out of over 120 teams at an international EV competition by leading cross-functional coordination and architecting the vehicle's datalogging system.",
     ],
   },
   {
-    role: "Undergraduate Researcher",
-    company: "University ML Lab",
-    url: "#",
-    period: "Sep 2022 – May 2023",
+    role: "Outreach Lead",
+    company: "Formula Slug – UCSC Formula SAE EV",
+    url: "https://www.slugracing.com",
+    period: "Sep 2024 – Present",
     bullets: [
-      "Implemented and benchmarked graph neural network models for citation network classification.",
-      "Co-authored paper accepted at workshop; achieved 3% accuracy improvement over baseline.",
+      "Led recruiting and onboarding for 100+ new members to make Formula Slug the largest club on campus, a 3.5× increase over the previous year.",
+      "Led outreach and canvassing strategy during Giving Day campaign, contributing to over $40,000 in funds raised, representing a 2.5× increase over the previous year.",
+      "Wrote a ten-page research paper proposing next-generation vehicle telemetry optimizations; paper ranked in the top 30% of submissions.",
+    ],
+  },
+  {
+    role: "CSE 20/30 Undergraduate Group Tutor",
+    company: "Jack Baskin School of Engineering",
+    url: "https://engineering.ucsc.edu",
+    period: "Dec 2024 – Present",
+    bullets: [
+      "Increased student engagement by 37% by designing learning activities and creating supplemental resources and solution guides for a class of over 300 students.",
+      "Boosted student scores by an average of 28% by implementing customized review sessions and practice exercises for groups of 2–8 students.",
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "DevFlow",
+    title: "Campus Waste Auditing",
     description:
-      "A developer productivity tool that aggregates GitHub PRs, Jira tickets, and Slack threads into a unified daily digest. Built with Next.js, tRPC, and PostgreSQL.",
-    tech: ["Next.js", "tRPC", "PostgreSQL", "TypeScript"],
+      "Flutter-based Firebase application for waste image collection, tagging, and real-time data reporting. Integrated beta testing with 300+ UCSC Sustainability Officers. Fine-tuned PyTorch image classification models to automate waste identification with AI-assisted tagging.",
+    tech: ["PyTorch", "AWS Lambda", "Flutter", "Dart", "Firebase"],
     github: "https://github.com/nchalla3",
     live: "#",
   },
   {
-    title: "CodeLens",
+    title: "Lock-In Factory",
     description:
-      "VS Code extension that uses static analysis to surface complexity hotspots and technical debt in real time. 500+ installs on the marketplace.",
-    tech: ["TypeScript", "VS Code API", "AST parsing"],
-    github: "https://github.com/nchalla3",
-    live: "#",
-  },
-  {
-    title: "TrailMap",
-    description:
-      "Mobile-first hiking trail discovery app with offline map support and community route sharing. Built with React Native and Supabase.",
-    tech: ["React Native", "Supabase", "MapLibre", "Expo"],
+      "Social accountability app built with Flutter and Firebase to promote a culture of greater productivity. Led a team of three through system design and development. Beta tested with 50 users, driving a reported 80% boost in habit engagement and goal accomplishment.",
+    tech: ["Flutter", "Dart", "Firebase", "Android Studio"],
     github: "https://github.com/nchalla3",
     live: "#",
   },
