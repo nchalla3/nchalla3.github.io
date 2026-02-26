@@ -140,5 +140,11 @@ async function markdownToHtml(markdown: string): Promise<string> {
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(cleaned);
 
-  return String(result);
+  // Rewrite relative Quartz static asset paths to the live Cloudflare Pages URL.
+  // Notes reference assets as "../static/foo" relative to their content path;
+  // the portfolio doesn't serve those files, but they're available on the Quartz CDN.
+  return String(result).replace(
+    /src="\.\.\/static\//g,
+    'src="https://nchalla3-notes.pages.dev/static/',
+  );
 }
