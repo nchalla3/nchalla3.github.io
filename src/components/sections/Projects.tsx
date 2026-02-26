@@ -71,7 +71,7 @@ export default function Projects() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             whileHover={{ y: -6, transition: { duration: 0.2 } }}
-            className="group relative bg-[#0d1b2e] border border-slate-800 rounded-lg p-6 flex flex-col gap-5 hover:border-[var(--accent)]/50 hover:shadow-[0_10px_40px_rgba(45,212,191,0.08)] transition-all duration-300 cursor-default"
+            className="group relative bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 flex flex-col gap-5 hover:border-[var(--accent)]/50 hover:shadow-[0_10px_40px_rgba(45,212,191,0.08)] transition-all duration-300 cursor-default"
           >
             {/* Glow on hover */}
             <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[var(--accent)]/0 to-transparent opacity-0 group-hover:opacity-5 transition-opacity duration-300" />

@@ -62,7 +62,7 @@ export default function About() {
                       type: "spring",
                       stiffness: 200,
                     }}
-                    className="font-mono text-xs bg-[#0f2137] border border-slate-700 text-slate-300 px-3 py-1 rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors duration-200 cursor-default"
+                    className="font-mono text-xs bg-[var(--card)] border border-[var(--border)] text-slate-300 px-3 py-1 rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors duration-200 cursor-default"
                   >
                     {skill}
                   </motion.span>

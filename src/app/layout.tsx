@@ -31,9 +31,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        {/* Prevent flash of unstyled content on theme load */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){var r=document.documentElement;r.classList.add('light');r.style.setProperty('--background','#f8fafc');r.style.setProperty('--foreground','#0f172a');r.style.setProperty('--accent','#0d9488');r.style.setProperty('--surface','#f1f5f9');r.style.setProperty('--card','#ffffff');r.style.setProperty('--border','#e2e8f0');}}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a0a0a] text-slate-300`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

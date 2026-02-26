@@ -46,7 +46,7 @@ export default function NotesPage() {
         <div className="flex items-center gap-4 mb-4">
           <span className="font-mono text-[var(--accent)] text-sm">05.</span>
           <h1 className="text-3xl md:text-4xl font-bold text-slate-200">
-            Notes
+            Blog
           </h1>
           <div className="flex-1 h-px bg-gradient-to-r from-slate-700 to-transparent" />
         </div>
@@ -77,8 +77,8 @@ export default function NotesPage() {
                   {grouped[folder].map((note) => (
                     <Link
                       key={note.slug.join("/")}
-                      href={`/notes/${note.slug.join("/")}`}
-                      className="group relative bg-[#0d1b2e] border border-slate-800 rounded-lg p-5 flex flex-col gap-3 hover:border-[var(--accent)]/50 hover:shadow-[0_8px_30px_rgba(45,212,191,0.07)] transition-all duration-300"
+                      href={`/blog/${note.slug.join("/")}`}
+                      className="group relative bg-[var(--card)] border border-[var(--border)] rounded-lg p-5 flex flex-col gap-3 hover:border-[var(--accent)]/50 hover:shadow-[0_8px_30px_rgba(45,212,191,0.07)] transition-all duration-300"
                     >
                       <div className="flex items-start gap-3">
                         <span className="text-slate-600 group-hover:text-[var(--accent)] transition-colors mt-0.5 shrink-0">

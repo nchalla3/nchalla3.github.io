@@ -5,9 +5,14 @@
   --foreground: #ccd6f6;
   --accent: #2dd4bf;
   --surface: #111827;
+  --card: #0d1b2e;
+  --border: #1e293b;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
+/* Light mode: CSS variables set via JS (style.setProperty) — not CSS selectors,
+   because Turbopack's Lightning CSS strips custom-property overrides at compile time. */
 
 @theme inline {
   --color-background: var(--background);
@@ -33,6 +38,9 @@ body {
   background: #1e3a5f;
   border-radius: 3px;
 }
+.light ::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+}
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
 }
@@ -43,9 +51,47 @@ body {
   color: var(--accent);
 }
 
+/* ── Navbar backdrop ─────────────────────────────────────────────────────── */
+.navbar-scrolled {
+  background-color: rgba(10, 10, 10, 0.85);
+}
+.light .navbar-scrolled {
+  background-color: rgba(248, 250, 252, 0.92);
+}
+
+/* ── Light mode overrides for Tailwind slate utilities ───────────────────── */
+.light .text-slate-100,
+.light .text-slate-200 {
+  color: #0f172a;
+}
+.light .text-slate-300 {
+  color: #1e293b;
+}
+.light .text-slate-400 {
+  color: #475569;
+}
+.light .text-slate-500 {
+  color: #64748b;
+}
+.light .border-slate-800 {
+  border-color: #e2e8f0;
+}
+.light .border-slate-700 {
+  border-color: #cbd5e1;
+}
+.light .bg-slate-800\/60 {
+  background-color: rgba(226, 232, 240, 0.6);
+}
+.light .hover\:bg-slate-800\/30:hover {
+  background-color: rgba(148, 163, 184, 0.15);
+}
+.light .hover\:text-slate-300:hover {
+  color: #0f172a;
+}
+
 /* ── Note prose ──────────────────────────────────────────────────────────── */
 .note-prose {
-  color: #ccd6f6;
+  color: var(--foreground);
   line-height: 1.75;
   font-size: 1rem;
 }
@@ -55,7 +101,7 @@ body {
 .note-prose h4,
 .note-prose h5,
 .note-prose h6 {
-  color: #e2e8f0;
+  color: var(--foreground);
   font-weight: 700;
   letter-spacing: -0.01em;
   margin-top: 2rem;
@@ -75,8 +121,8 @@ body {
   transition: text-decoration-color 0.2s;
 }
 .note-prose a:hover { text-decoration-color: var(--accent); }
-.note-prose strong { color: #e2e8f0; font-weight: 600; }
-.note-prose em { color: #94a3b8; }
+.note-prose strong { color: var(--foreground); font-weight: 600; }
+.note-prose em { color: var(--foreground); opacity: 0.7; }
 .note-prose ul, .note-prose ol {
   padding-left: 1.5rem;
   margin-bottom: 1.25rem;
@@ -87,22 +133,22 @@ body {
   border-left: 3px solid var(--accent);
   padding-left: 1rem;
   margin: 1.5rem 0;
-  color: #94a3b8;
+  opacity: 0.75;
   font-style: italic;
 }
-.note-prose hr { border-color: #1e293b; margin: 2rem 0; }
+.note-prose hr { border-color: var(--border); margin: 2rem 0; }
 .note-prose img { max-width: 100%; border-radius: 6px; margin: 1.5rem 0; }
 .note-prose table { width: 100%; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 0.9rem; }
 .note-prose th {
   text-align: left;
   padding: 0.5rem 0.75rem;
-  border-bottom: 2px solid #1e293b;
-  color: #e2e8f0;
+  border-bottom: 2px solid var(--border);
+  color: var(--foreground);
   font-weight: 600;
 }
 .note-prose td {
   padding: 0.4rem 0.75rem;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid var(--border);
 }
 /* Inline code */
 .note-prose :not(pre) > code {
@@ -114,7 +160,7 @@ body {
   border-radius: 4px;
   padding: 0.1em 0.35em;
 }
-/* Code blocks (rehype-pretty-code) */
+/* Code blocks — always dark */
 .note-prose figure[data-rehype-pretty-code-figure] {
   margin: 1.5rem 0;
 }

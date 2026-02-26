@@ -34,7 +34,7 @@ export default async function NotePage({ params }: Props) {
       <main className="max-w-3xl mx-auto px-6 pt-32 pb-24">
         {/* Back link */}
         <Link
-          href="/notes"
+          href="/blog"
           className="inline-flex items-center gap-2 font-mono text-xs text-slate-500 hover:text-[var(--accent)] transition-colors mb-10"
         >
           <svg
@@ -74,7 +74,7 @@ export default async function NotePage({ params }: Props) {
             {note.tags.map((tag) => (
               <span
                 key={tag}
-                className="font-mono text-xs text-slate-500 bg-slate-800/60 border border-slate-700/50 px-2 py-0.5 rounded"
+                className="font-mono text-xs text-slate-500 bg-[var(--surface)] border border-[var(--border)] px-2 py-0.5 rounded"
               >
                 #{tag}
               </span>
