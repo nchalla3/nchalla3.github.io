@@ -18,10 +18,10 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            I&apos;m Naveen, an undergraduate Computer Science student at the
+            University of California, Santa Cruz. My interests are currently in
+            scalable systems design to solve everyday problems and augmenting
+            the human condition with the power of computing.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -29,10 +29,14 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            Outside of tech, I spend my time writing screenplays, going on
+            whatever sidequest presents itself, and volunteering in my
+            community. I&apos;m a big music person, with my current rotation
+            including Noah Kahan, RHCP, Kendrick Lamar, Radiohead, Clipse, and
+            Saba. You&apos;ll usually find me at a concert, catching a football
+            or baseball game, or hunting down a good local spot to eat or
+            drink. I also have a soft spot for movies and genuinely believe
+            that trying something new spontaneously is almost always worth it.
           </motion.p>
         </div>
 

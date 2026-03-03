@@ -67,16 +67,6 @@ export default function Hero() {
           I build things.
         </motion.h2>
 
-        <motion.p
-          variants={item}
-          className="max-w-xl text-slate-400 text-base md:text-lg leading-relaxed mb-10"
-        >
-          I&apos;m Naveen, an undergraduate Computer Science student at the
-          University of California, Santa Cruz. My interests are currently in
-          scalable systems design to solve everyday problems and augmenting the
-          human condition with the power of computing.
-        </motion.p>
-
         <motion.div variants={item} className="flex flex-wrap gap-4">
           <a
             href="#projects"
