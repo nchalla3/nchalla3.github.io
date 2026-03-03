@@ -2,7 +2,7 @@ export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
-  { label: "Notes", href: "/blog" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -78,5 +78,5 @@ export const projects = [
 export const social = {
   github: "https://github.com/nchalla3",
   linkedin: "https://linkedin.com/in/nchalla3",
-  email: "mailto:nchalla3@example.com",
+  email: "mailto:nchalla@ucsc.edu",
 };
