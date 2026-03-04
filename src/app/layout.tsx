@@ -33,6 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/katex@0.16.33/dist/katex.min.css"
+          crossOrigin="anonymous"
+        />
         {/* Prevent flash of unstyled content on theme load */}
         <script
           dangerouslySetInnerHTML={{

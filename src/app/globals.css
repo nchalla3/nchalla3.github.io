@@ -180,3 +180,102 @@ body {
   color: inherit;
   font-size: inherit;
 }
+
+/* ── Obsidian callouts ───────────────────────────────────────────────────── */
+.note-prose .callout {
+  border-radius: 6px;
+  border: 1px solid rgba(45, 212, 191, 0.3);
+  padding: 0.75rem 1rem;
+  margin: 1.5rem 0;
+  background: rgba(45, 212, 191, 0.05);
+}
+.note-prose .callout-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-style: normal;
+}
+.note-prose .callout-content p:last-child { margin-bottom: 0; }
+.note-prose .callout-content > *:last-child { margin-bottom: 0; }
+
+/* blockquote inside callout shouldn't double-style */
+.note-prose .callout blockquote { border-left: none; opacity: 1; font-style: normal; }
+
+/* type-specific accent colors */
+.note-prose .callout-warning,
+.note-prose .callout-caution,
+.note-prose .callout-attention {
+  border-color: rgba(251, 191, 36, 0.4);
+  background: rgba(251, 191, 36, 0.05);
+}
+.note-prose .callout-warning .callout-title,
+.note-prose .callout-caution .callout-title,
+.note-prose .callout-attention .callout-title { color: #fbbf24; }
+
+.note-prose .callout-danger,
+.note-prose .callout-error,
+.note-prose .callout-bug,
+.note-prose .callout-failure,
+.note-prose .callout-fail,
+.note-prose .callout-missing {
+  border-color: rgba(248, 113, 113, 0.4);
+  background: rgba(248, 113, 113, 0.05);
+}
+.note-prose .callout-danger .callout-title,
+.note-prose .callout-error .callout-title,
+.note-prose .callout-bug .callout-title,
+.note-prose .callout-failure .callout-title,
+.note-prose .callout-fail .callout-title,
+.note-prose .callout-missing .callout-title { color: #f87171; }
+
+.note-prose .callout-success,
+.note-prose .callout-check,
+.note-prose .callout-done {
+  border-color: rgba(74, 222, 128, 0.4);
+  background: rgba(74, 222, 128, 0.05);
+}
+.note-prose .callout-success .callout-title,
+.note-prose .callout-check .callout-title,
+.note-prose .callout-done .callout-title { color: #4ade80; }
+
+.note-prose .callout-note,
+.note-prose .callout-info,
+.note-prose .callout-todo {
+  border-color: rgba(96, 165, 250, 0.4);
+  background: rgba(96, 165, 250, 0.05);
+}
+.note-prose .callout-note .callout-title,
+.note-prose .callout-info .callout-title,
+.note-prose .callout-todo .callout-title { color: #60a5fa; }
+
+.note-prose .callout-question,
+.note-prose .callout-help,
+.note-prose .callout-faq {
+  border-color: rgba(167, 139, 250, 0.4);
+  background: rgba(167, 139, 250, 0.05);
+}
+.note-prose .callout-question .callout-title,
+.note-prose .callout-help .callout-title,
+.note-prose .callout-faq .callout-title { color: #a78bfa; }
+
+/* light mode callout adjustments */
+.light .note-prose .callout { background: rgba(45, 212, 191, 0.08); }
+.light .note-prose .callout-warning,
+.light .note-prose .callout-caution,
+.light .note-prose .callout-attention { background: rgba(251, 191, 36, 0.08); }
+.light .note-prose .callout-danger,
+.light .note-prose .callout-error,
+.light .note-prose .callout-bug,
+.light .note-prose .callout-failure,
+.light .note-prose .callout-fail,
+.light .note-prose .callout-missing { background: rgba(248, 113, 113, 0.08); }
+.light .note-prose .callout-success,
+.light .note-prose .callout-check,
+.light .note-prose .callout-done { background: rgba(74, 222, 128, 0.08); }
+.light .note-prose .callout-note,
+.light .note-prose .callout-info,
+.light .note-prose .callout-todo { background: rgba(96, 165, 250, 0.08); }
+.light .note-prose .callout-question,
+.light .note-prose .callout-help,
+.light .note-prose .callout-faq { background: rgba(167, 139, 250, 0.08); }
