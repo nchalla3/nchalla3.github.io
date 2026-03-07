@@ -121,7 +121,7 @@ export default function Navbar() {
         <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <motion.a
-            href="#"
+            href="/"
             className="font-mono text-[var(--accent)] text-lg font-bold hover:opacity-80 transition-opacity"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
